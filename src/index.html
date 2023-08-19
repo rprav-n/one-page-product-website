@@ -14,164 +14,308 @@
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
   <body>
-    <div class="max-w-6xl  mx-auto">
+    <div>
       <!-- SECTION Navigation bar -->
-      <nav
-        class="fixed top-0 left-0 right-0  p-4 bg-white-50 z-10 bg-opacity-90 backdrop-blur-md w-full"
-      >
-        <div class="max-w-5xl mx-auto flex items-center justify-between">
-            <!-- Product Logo + Name -->
-        <div class="flex items-center">
-            <img
-              src="http://via.placeholder.com/256x256"
-              alt="PRODUCT NAME"
-              class="h-8 w-8 mr-2"
-            />
-            <span class="text-black text-lg font-semibold"
-              >Your Product Name</span
-            >
-          </div>
-  
-          <!-- Mobile Menu Icon -->
-          <button id="mobile-menu-button" class="lg:hidden text-black">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              class="h-6 w-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-  
-          <!-- Desktop Navigation Links + Download Button -->
-          <div class="hidden lg:flex items-center space-x-7 text-black">
-            <a href="#" class="hover:underline">Home</a>
-            <a href="#" class="hover:underline">Features</a>
-            <a href="#" class="hover:underline">Pricing</a>
-            <a href="#" class="hover:underline">Contact</a>
-            <button
-              class="py-2 px-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded shadow-md transition duration-300"
-            >
-              Download
-            </button>
-          </div>
-        </div>
-      </nav>
-      <!-- Mobile Dropdown Menu -->
-      <div
-        id="mobile-menu"
-        class="hidden lg:hidden bg-white border border-gray-300 mt-16 py-2 px-4 rounded shadow-md space-y-5 fixed top-4 left-0 right-0"
-      >
-        <a href="#" class="block text-black hover:underline py-1">Home</a>
-        <a href="#" class="block text-black hover:underline py-1">Features</a>
-        <a href="#" class="block text-black hover:underline py-1">Pricing</a>
-        <a href="#" class="block text-black hover:underline py-1">Contact</a>
-        <button
-          class="py-2 px-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded shadow-md transition duration-300"
+      <div class="max-w-7xl mx-auto">
+        <nav
+          class="fixed top-0 left-0 right-0 p-4 bg-white-50 z-10 bg-opacity-50 backdrop-blur-md w-full bg-white"
         >
-          Download
-        </button>
-      </div>
+          <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <!-- Product Logo + Name -->
+            <div class="flex items-center">
+              <img
+                src="http://via.placeholder.com/256x256"
+                alt="PRODUCT NAME"
+                class="h-8 w-8 mr-2"
+              />
+              <span class="text-black text-lg font-semibold"
+                >Your Product Name</span
+              >
+            </div>
 
-      <div class="mt-20 px-12 py-10">
-        <!-- SECTION Hero -->
-        <section
-          class="flex flex-col lg:flex-row justify-between items-center w-full relative pb-20">
-          <div class="lg:w-1/3 text-center lg:text-left">
-            <div class="text-5xl font-semibold tracking-wide py-4">
-              Product Name
-            </div>
-            <div class="text-base font-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              numquam modi aspernatur iusto magnam impedit maiores sed libero
-              ab, nisi nemo recusandae temporibus nostrum
-            </div>
-            <div class="my-4">
-              <i class="fa-solid fa-star text-yellow-400"></i>
-              <i class="fa-solid fa-star text-yellow-400"></i>
-              <i class="fa-solid fa-star text-yellow-400"></i>
-              <i class="fa-solid fa-star text-yellow-400"></i>
-              <i class="fa-solid fa-star text-yellow-400"></i>
-              <span>
-                <span class="font-bold">5.0</span> Based on user reviews
-              </span>
-            </div>
-            <div>
-              <div class="text-base text-gray-500">
-                People who are using this app.
-              </div>
-              <div class="flex justify-center lg:justify-start space-x-2 my-2">
-                <img
-                  src="https://via.placeholder.com/256x256"
-                  class="rounded-full w-9 h-9"
-                  alt=""
+            <!-- Mobile Menu Icon -->
+            <button id="mobile-menu-button" class="lg:hidden text-black">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
                 />
-                <img
-                  src="https://via.placeholder.com/256x256"
-                  class="rounded-full w-9 h-9"
-                  alt=""
-                />
-                <img
-                  src="https://via.placeholder.com/256x256"
-                  class="rounded-full w-9 h-9"
-                  alt=""
-                />
-                <img
-                  src="https://via.placeholder.com/256x256"
-                  class="rounded-full w-9 h-9"
-                  alt=""
-                />
-                <img
-                  src="https://via.placeholder.com/256x256"
-                  class="rounded-full w-9 h-9"
-                  alt=""
-                />
-                <img
-                  src="https://via.placeholder.com/256x256"
-                  class="rounded-full w-9 h-9"
-                  alt=""
-                />
-              </div>
-            </div>
-            <button
-              class="bg-blue-500 px-8 py-4 text-white my-4 rounded font-semibold hover:bg-blue-600 shadow-md transition duration-300"
-            >
-              <i class="fa-solid fa-arrow-down"></i>
-              <span class="ml-2">Download for macOS</span>
+              </svg>
             </button>
-          </div>
-          <div class="lg:w-2/3 flex justify-center">
-            <img src="https://via.placeholder.com/800x456" alt="" />
-          </div>
-        </section>
 
-        <!-- Section Rating + Product hunt -->
-        <section>
-            <div class="bg-white rounded-lg p-6 shadow-md">
-                <div class="flex items-center mb-4">
-                  <img src="avatar.jpg" alt="User Avatar" class="h-10 w-10 rounded-full mr-3">
-                  <div>
-                    <p class="text-gray-800 font-semibold">John Doe</p>
-                    <p class="text-gray-600">Web Developer</p>
+            <!-- Desktop Navigation Links + Download Button -->
+            <div class="hidden lg:flex items-center space-x-7 text-black">
+              <a href="#" class="hover:underline">Home</a>
+              <a href="#" class="hover:underline">Features</a>
+              <a href="#" class="hover:underline">Pricing</a>
+              <a href="#" class="hover:underline">Contact</a>
+              <button
+                class="py-2 px-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded shadow-md transition duration-300"
+              >
+                Download
+              </button>
+            </div>
+          </div>
+        </nav>
+        <!-- Mobile Dropdown Menu -->
+        <div
+          id="mobile-menu"
+          class="hidden lg:hidden bg-white border border-gray-300 mt-16 py-2 px-4 rounded shadow-md space-y-5 fixed top-4 left-0 right-0 z-10"
+        >
+          <a href="#" class="block text-black hover:underline py-1">Home</a>
+          <a href="#" class="block text-black hover:underline py-1">Features</a>
+          <a href="#" class="block text-black hover:underline py-1">Pricing</a>
+          <a href="#" class="block text-black hover:underline py-1">Contact</a>
+          <button
+            class="py-2 px-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded shadow-md transition duration-300"
+          >
+            Download
+          </button>
+        </div>
+      </div>
+      <div class="">
+        <!-- SECTION Hero -->
+        <div class="">
+          <div class="max-w-7xl mx-auto px-12">
+            <section
+              class="flex flex-col xl:flex-row justify-between items-center w-full relative mt-24 lg:mt-36"
+            >
+              <div
+                class="w-full xl:w-1/3 text-center xl:text-left mr-8 lg:mr-2"
+              >
+                <div class="text-5xl font-semibold tracking-wide py-4">
+                  <span class="">Product Name</span>
+                </div>
+                <div class="text-base font-normal">
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-check text-green-500 mr-2 my-2"></i
+                      >Lorem ipsum dolor sit amet consectetur
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check text-green-500 mr-2 my-2"></i
+                      >Lorem ipsum dolor sit amet consectetur
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check text-green-500 mr-2 my-2"></i
+                      >Lorem ipsum dolor sit amet consectetur
+                    </li>
+                  </ul>
+                </div>
+                <div class="my-4">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <span> <span class="font-bold">5.0</span> User review </span>
+                </div>
+                <div>
+                  <div class="text-sm">People who are using this app.</div>
+                  <div
+                    class="flex justify-center xl:justify-start space-x-2 my-2"
+                  >
+                    <img
+                      src="https://via.placeholder.com/256x256"
+                      class="rounded-full w-9 h-9"
+                      alt=""
+                    />
+                    <img
+                      src="https://via.placeholder.com/256x256"
+                      class="rounded-full w-9 h-9"
+                      alt=""
+                    />
+                    <img
+                      src="https://via.placeholder.com/256x256"
+                      class="rounded-full w-9 h-9"
+                      alt=""
+                    />
+                    <img
+                      src="https://via.placeholder.com/256x256"
+                      class="rounded-full w-9 h-9"
+                      alt=""
+                    />
+                    <img
+                      src="https://via.placeholder.com/256x256"
+                      class="rounded-full w-9 h-9"
+                      alt=""
+                    />
+                    <img
+                      src="https://via.placeholder.com/256x256"
+                      class="rounded-full w-9 h-9"
+                      alt=""
+                    />
                   </div>
                 </div>
-                <p class="text-gray-700 mb-4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                <div class="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-yellow-500">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-yellow-500 font-semibold ml-1">4.5</span>
+                <button
+                  class="bg-blue-500 px-8 py-4 text-white my-4 rounded font-semibold hover:bg-blue-600 shadow-md transition duration-300"
+                >
+                  <i class="fa-solid fa-arrow-down"></i>
+                  <span class="ml-2">Download for macOS</span>
+                </button>
+              </div>
+              <div
+                class="w-full lg:w-5/6 xl:w-2/3 flex justify-center mt-12 xl:mt-0"
+              >
+                <img src="https://via.placeholder.com/1200x700" alt="" />
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- SECTION Features -->
+        <div class="px-12">
+          <div class="max-w-7xl mx-auto">
+            <div class="text-center font-medium text-4xl my-20 mt-28">
+              Features
+            </div>
+            <section
+              class="flex flex-col xl:flex-row justify-center items-center my-20"
+            >
+              <div class="w-full md:w-2/3">
+                <div
+                  class="text-3xl font-semibold mb-6 lg:mb-0 text-center lg:text-left"
+                >
+                  Feature 1 Heading
+                </div>
+                <div class="text-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur beatae nam delectus ipsam praesentium, ex
+                  laudantium corrupti expedita quas in.
                 </div>
               </div>
+              <div class="w-full flex justify-center items-center my-10">
+                <img src="https://via.placeholder.com/800x500" alt="" />
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- SECTION Testimonial -->
+        <div class="px-12">
+          <div class="max-w-7xl mx-auto">
+            <div class="text-center font-medium text-4xl my-20">
+              Testimonials
+            </div>
+            <section class="mb-20">
+              <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+                <div
+                  class="bg-white rounded-lg p-6 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] text-sm w-full"
+                >
+                  <div class="flex items-center mb-4">
+                    <img
+                      src="https://via.placeholder.com/100x100"
+                      alt="User Avatar"
+                      class="h-10 w-10 rounded-full mr-3"
+                    />
+                    <div>
+                      <p class="font-semibold">John Doe</p>
+                      <p class="text-blue-500">Web Developer</p>
+                    </div>
+                  </div>
+                  <p class="mb-4">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua."
+                  </p>
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <span class="text-yellow-500 font-semibold ml-1">4.5</span>
+                  </div>
+                </div>
+                <div
+                  class="bg-white rounded-lg p-6 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] text-sm w-full"
+                >
+                  <div class="flex items-center mb-4">
+                    <img
+                      src="https://via.placeholder.com/100x100"
+                      alt="User Avatar"
+                      class="h-10 w-10 rounded-full mr-3"
+                    />
+                    <div>
+                      <p class="font-semibold">John Doe</p>
+                      <p class="text-blue-500">Web Developer</p>
+                    </div>
+                  </div>
+                  <p class="mb-4">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua."
+                  </p>
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <span class="text-yellow-500 font-semibold ml-1">4.5</span>
+                  </div>
+                </div>
+                <div
+                  class="bg-white rounded-lg p-6 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] text-sm w-full"
+                >
+                  <div class="flex items-center mb-4">
+                    <img
+                      src="https://via.placeholder.com/100x100"
+                      alt="User Avatar"
+                      class="h-10 w-10 rounded-full mr-3"
+                    />
+                    <div>
+                      <p class="font-semibold">John Doe</p>
+                      <p class="text-blue-500">Web Developer</p>
+                    </div>
+                  </div>
+                  <p class="mb-4">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua."
+                  </p>
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <span class="text-yellow-500 font-semibold ml-1">4.5</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- SECTION Pricing -->
+        <div class="px-12">
+          <div class="max-w-7xl mx-auto">
+            <div class="text-center font-medium text-4xl my-10">Pricing</div>
+            <div class="flex justify-center items-center">
+                <div class="bg-white rounded-lg p-6 text-center  shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+                    <h2 class="text-2xl font-semibold text-gray-800">One-Time Purchase</h2>
+                    <p class="mt-2 text-gray-600">Get full access forever</p>
+                    <div class="mt-4">
+                      <p class="text-4xl font-semibold text-gray-800">$49</p>
+                    </div>
+                    <ul class="mt-4 space-y-2">
+                      <li class="text-gray-700">Full Access to All Features</li>
+                      <li class="text-gray-700">Lifetime Updates</li>
+                    </ul>
+                    <div class="flex mt-3 w-30 h-14 bg-black text-white rounded-lg items-center justify-center cursor-pointer">
+                        <div class="mr-3">
+                            <svg viewBox="0 0 384 512" width="30" >
+                                <path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="text-xs text-left">Download on the</div>
+                            <div class="text-xl font-semibold font-sans -mt-1">Mac App Store</div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
               
-        </section>
+          </div>
+        </div>
+        <br><br><br><br>
       </div>
     </div>
 
