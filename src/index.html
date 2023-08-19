@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Page Product Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body >
+    <!-- SECTION Navigation bar -->
+    <nav class="fixed top-0 left-0 right-0 flex items-center justify-between p-4 bg-white-50 z-10 bg-opacity-90 backdrop-blur-md">
+        <!-- Product Logo + Name -->
+        <div class="flex items-center">
+          <img src="http://via.placeholder.com/256x256" alt="PRODUCT NAME" class="h-8 w-8 mr-2" />
+          <span class="text-black text-lg font-semibold">Your Product Name</span>
+        </div>
+      
+        <!-- Mobile Menu Icon -->
+        <button id="mobile-menu-button" class="lg:hidden text-black">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      
+        <!-- Desktop Navigation Links + Download Button -->
+        <div class="hidden lg:flex items-center space-x-7 text-black">
+          <a href="#" class="hover:underline">Home</a>
+          <a href="#" class="hover:underline">Features</a>
+          <a href="#" class="hover:underline">Pricing</a>
+          <a href="#" class="hover:underline">Contact</a>
+          <button
+            class="py-2 px-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded shadow-md transition duration-300"
+          >
+            Download
+          </button>
+        </div>
+        
+      </nav>
+       <!-- Mobile Dropdown Menu -->
+       <div id="mobile-menu" class="hidden lg:hidden bg-white border border-gray-300 mt-16 py-2 px-4 rounded shadow-md space-y-5
+       fixed top-4 left-0 right-0">
+        <a href="#" class="block text-black hover:underline py-1">Home</a>
+        <a href="#" class="block text-black hover:underline py-1">Features</a>
+        <a href="#" class="block text-black hover:underline py-1">Pricing</a>
+        <a href="#" class="block text-black hover:underline py-1">Contact</a>
+        <button
+            class="py-2 px-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded shadow-md transition duration-300"
+          >
+            Download
+          </button>
+      </div>
+
+      <div class="mt-20 px-12  py-20">
+        <!-- SECTION Hero -->
+        <section class="flex flex-col lg:flex-row justify-between items-center w-full">
+            <div class="lg:w-1/3 text-center lg:text-left">
+                <div class="text-6xl font-semibold tracking-wide py-6">Product Name</div>
+                <div class="text-base font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia numquam modi aspernatur iusto magnam impedit maiores sed libero ab, nisi nemo recusandae temporibus nostrum</div>
+                <div class="my-4">
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <span>
+                        <span class="font-bold">5.0</span> Based on user reviews
+                    </span>
+                </div>
+                <div>
+                    <div class="text-base text-gray-500">People who are using this app.</div>
+                    <div class="flex justify-center lg:justify-start space-x-2 my-2">
+                        <img src="https://via.placeholder.com/256x256" class="rounded-full w-9 h-9" alt="">
+                        <img src="https://via.placeholder.com/256x256" class="rounded-full w-9 h-9" alt="">
+                        <img src="https://via.placeholder.com/256x256" class="rounded-full w-9 h-9" alt="">
+                        <img src="https://via.placeholder.com/256x256" class="rounded-full w-9 h-9" alt="">
+                        <img src="https://via.placeholder.com/256x256" class="rounded-full w-9 h-9" alt="">
+                        <img src="https://via.placeholder.com/256x256" class="rounded-full w-9 h-9" alt="">
+                    </div>
+                </div>
+                <button class="bg-blue-500 px-8 py-4 text-white my-4 rounded font-semibold hover:bg-blue-600 shadow-md transition duration-300">
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <span class="ml-2">Download for macOS</span>
+                </button>
+            </div>
+            <div class="lg:w-2/3 flex justify-center">
+                <img src="https://via.placeholder.com/800x456" alt="">
+            </div>
+        </section>
+      </div>
+      
+
+      
+      <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+      
+        mobileMenuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      </script>
+      
+      
+  </body>
+</html>
